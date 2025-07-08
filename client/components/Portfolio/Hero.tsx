@@ -12,6 +12,22 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fbe9fc0ac59cd4482a308b8c849d77d5f%2F56ab05aed6bc4de592c6f735e1945b50?format=webp&width=800"
+                alt="Hasnain Chohan"
+                className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-primary/20 to-transparent"></div>
+            </div>
+          </motion.div>
+
           <motion.h1
             className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent mb-6"
             initial={{ opacity: 0, y: 20 }}
